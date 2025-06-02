@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Song</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    a.download-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background: linear-gradient(135deg, #1db954, #1ed760);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    a.download-button:hover {
+      background: linear-gradient(135deg, #17a34a, #1ec955);
+      transform: scale(1.05);
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Want to download this song?</h1>
+  <p>Click the button below to start your download.</p>
+  <a class="download-button" href="https://arweave.net/IWJcSexplhVhnhLJizogl1fK7Zj05NGaOPFk7MIShEg" download>
+    Download Song
+  </a>
+  <p>Note that the song will be downloaded as a 7zip archive named after the arweave transaction ID with no extension,
+     but will still open with 7zip just fine.</p>
+</body>
+</html>
